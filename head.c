@@ -2,7 +2,7 @@
 #include "stat.h"
 #include "user.h"
 
-char buf[512];
+char buf[5122];
 
 void
 head(int fd, char *name, int line)
@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
 				
                   else {	
 			if ((fd = open(argv[i], 0)) < 0) {
-                        printf(1, "head: cannot open %s\n", argv[i]);
+                        printf(1, "head: tidak bisa dibuka %s\n", argv[i]);
                         exit();
                         }
                   }
